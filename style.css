@@ -13,9 +13,14 @@ button {
     outline: none!important;
 }
 
-a:hover {
-    text-decoration: none;
+a:hover,
+a:focus {
     cursor: pointer;
+}
+
+a img:hover,
+a img:focus{
+    transform: scale(1.1);
 }
 
 #page-loading-blocs-notifaction {
@@ -103,7 +108,9 @@ a:hover {
     color: rgba(255, 255, 255, .7);
 }
 
-.d-bloc button:hover {
+.d-bloc button:hover,
+.d-bloc button:focus
+ {
     color: rgba(255, 255, 255, .9);
 }
 
@@ -133,23 +140,37 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, 0.6);
 }
 
 .d-bloc .a-btn:hover,
+.d-bloc .a-btn:focus,
 .d-bloc .navbar a:hover,
+.d-bloc .navbar a:focus,
 .d-bloc .navbar-brand:hover,
+.d-bloc .navbar-brand:focus,
 .d-bloc a:hover .icon-sm,
+.d-bloc a:focus .icon-sm,
 .d-bloc a:hover .icon-md,
+.d-bloc a:focus .icon-md,
 .d-bloc a:hover .icon-lg,
+.d-bloc a:focus .icon-lg,
 .d-bloc a:hover .icon-xl,
+.d-bloc a:focus .icon-xl,
 .d-bloc h1 a:hover,
+.d-bloc h1 a:focus,
 .d-bloc h2 a:hover,
+.d-bloc h2 a:focus,
 .d-bloc h3 a:hover,
+.d-bloc h3 a:focus,
 .d-bloc h4 a:hover,
+.d-bloc h4 a:focus,
 .d-bloc h5 a:hover,
+.d-bloc h5 a:focus,
 .d-bloc h6 a:hover,
-.d-bloc p a:hover {
+.d-bloc h6 a:focus,
+.d-bloc p a:hover,
+.d-bloc p a:focus {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -158,7 +179,8 @@ a:hover {
 }
 
 .d-bloc .btn-wire,
-.d-bloc .btn-wire:hover {
+.d-bloc .btn-wire:hover,
+.d-bloc .btn-wire:focus {
     color: rgba(255, 255, 255, 1);
     border-color: rgba(255, 255, 255, 1);
 }
@@ -167,7 +189,8 @@ a:hover {
     color: rgba(0, 0, 0, .5);
 }
 
-.d-bloc .panel button:hover {
+.d-bloc .panel button:hover,
+.d-bloc .panel button:focus {
     color: rgba(0, 0, 0, .7);
 }
 
@@ -183,12 +206,14 @@ a:hover {
     color: rgba(0, 0, 0, .6);
 }
 
-.d-bloc .panel .a-btn:hover {
+.d-bloc .panel .a-btn:hover,
+.d-bloc .panel .a-btn:focus {
     color: rgba(0, 0, 0, 1);
 }
 
 .d-bloc .panel .btn-wire,
-.d-bloc .panel .btn-wire:hover {
+.d-bloc .panel .btn-wire:hover,
+.d-bloc .panel .btn-wire:focus {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
 }
@@ -199,7 +224,9 @@ a:hover {
 }
 
 .d-bloc .panel button:hover,
-.l-bloc button:hover {
+.d-bloc .panel button:focus,
+.l-bloc button:hover,
+.l-bloc button:focus {
     color: rgba(0, 0, 0, .7);
 }
 
@@ -235,20 +262,35 @@ a:hover {
 }
 
 .d-bloc .panel .a-btn:hover,
+.d-bloc .panel .a-btn:focus,
 .l-bloc .a-btn:hover,
+.l-bloc .a-btn:focus,
 .l-bloc .navbar a:hover,
+.l-bloc .navbar a:focus,
 .l-bloc .navbar-brand:hover,
+.l-bloc .navbar-brand:focus,
 .l-bloc a:hover .icon-sm,
+.l-bloc a:focus .icon-sm,
 .l-bloc a:hover .icon-md,
+.l-bloc a:focus .icon-md,
 .l-bloc a:hover .icon-lg,
+.l-bloc a:focus .icon-lg,
 .l-bloc a:hover .icon-xl,
+.l-bloc a:focus .icon-xl,
 .l-bloc h1 a:hover,
+.l-bloc h1 a:focus,
 .l-bloc h2 a:hover,
+.l-bloc h2 a:focus,
 .l-bloc h3 a:hover,
+.l-bloc h3 a:focus,
 .l-bloc h4 a:hover,
+.l-bloc h4 a:focus,
 .l-bloc h5 a:hover,
+.l-bloc h5 a:focus,
 .l-bloc h6 a:hover,
-.l-bloc p a:hover {
+.l-bloc h6 a:focus,
+.l-bloc p a:hover,
+.l-bloc p a:focus {
     color: rgba(0, 0, 0, 1);
 }
 
@@ -258,8 +300,10 @@ a:hover {
 
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
+.d-bloc .panel .btn-wire:focus,
 .l-bloc .btn-wire,
-.l-bloc .btn-wire:hover {
+.l-bloc .btn-wire:hover,
+.l-bloc .btn-wire:focus {
     color: rgba(0, 0, 0, .7);
     border-color: rgba(0, 0, 0, .3);
 }
@@ -332,17 +376,13 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
-.nav > li a:focus {
-    background: transparent;
-}
-
 .navbar-toggle {
     margin: 10px 10px 0 0;
     border: 0px;
 }
 
-.navbar-toggle:hover {
+.navbar-toggle:hover,
+.navbar-toggle:focus {
     background: transparent!important;
 }
 
@@ -371,7 +411,8 @@ a:hover {
         -webkit-transform: translateY(-50%);
     }
     .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
+    .nav > li .dropdown-menu a:hover,
+    .nav > li .dropdown-menu a:focus {
         color: #484848;
     }
     .nav-invert .site-navigation {
@@ -455,6 +496,7 @@ nav .caret {
 
 .btn-d,
 .btn-d:hover,
+.btn-d:focus,
 .btn-d:focus {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
@@ -536,7 +578,8 @@ a[data-lightbox] {
     text-align: center;
 }
 
-a[data-lightbox]:hover::before {
+a[data-lightbox]:hover::before,
+a[data-lightbox]:focus::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
     font-size: 32px;
@@ -554,7 +597,8 @@ a[data-lightbox]:hover::before {
     -webkit-transform: translateY(-50%);
 }
 
-a[data-lightbox]:hover img {
+a[data-lightbox]:hover img,
+a[data-lightbox]:focus img {
     opacity: 0.6;
     -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
@@ -601,8 +645,11 @@ a[data-lightbox]:hover img {
 }
 
 .close-lightbox:hover,
+.close-lightbox:focus,
 .next-lightbox:hover,
-.prev-lightbox:hover {
+.next-lightbox:focus,
+.prev-lightbox:hover,
+.prev-lightbox:focus {
     opacity: 1.0;
     color: #FFF;
 }
@@ -739,6 +786,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black{
+    color:#000000;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -783,16 +834,14 @@ h4 {
     color: #000000!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover,
+.btn-atomic-tangerine:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
 
-.ltc-white {
-    color: #FFFFFF!important;
-}
-
-.ltc-white:hover {
+.ltc-white:hover,
+.ltc-white:focus {
     color: #cccccc!important;
 }
 
@@ -800,7 +849,8 @@ h4 {
     color: #F3976C!important;
 }
 
-.ltc-atomic-tangerine:hover {
+.ltc-atomic-tangerine:hover,
+.ltc-atomic-tangerine:focus {
     color: #c27956!important;
 }
 
@@ -848,13 +898,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -931,7 +981,8 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav > li:hover,
+    .nav > li:focus {
         background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
